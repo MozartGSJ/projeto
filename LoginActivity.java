@@ -31,17 +31,27 @@ public class LoginActivity extends AppCompatActivity {
 
         Button button = (Button) findViewById(R.id.bt_login);
 
-        button.setOnClickListener(LoginBotao);
+        //button.setOnClickListener(LoginBotao);
 
     }
-
+    
+    public void BotaoLogin(View v){
+            Toast.makeText(LoginActivity.this, "Funcionou",
+                    Toast.LENGTH_LONG).show();
+    }   
+    
     private View.OnClickListener LoginBotao = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             Toast.makeText(LoginActivity.this, "Hello World",
                     Toast.LENGTH_LONG).show();
+
+            Intent it = new Intent(LoginActivity.this, PrincipalActivity.class);
+            startActivity(it);
         }
     };
+
+
 }
 
 
