@@ -79,7 +79,8 @@
                 android:elevation="0dp"
                 android:layout_width="145dp"
                 android:contextClickable="true"
-                android:cursorVisible="true" />
+                android:cursorVisible="true"
+                android:onClick="BotaoLogin" />
 
             <ImageView
                 android:layout_width="match_parent"
